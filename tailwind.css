@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button,
+  input,
+  select,
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-none;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --backgroundcard: var(--variable-collection-background-card);
+  --backgroundpage: var(--variable-collection-background-page);
+  --body-default-medium-font-family: "Poppins", Helvetica;
+  --body-default-medium-font-size: 16px;
+  --body-default-medium-font-style: normal;
+  --body-default-medium-font-weight: 500;
+  --body-default-medium-letter-spacing: 0px;
+  --body-default-medium-line-height: 24px;
+  --body-default-regular-font-family: "Poppins", Helvetica;
+  --body-default-regular-font-size: 16px;
+  --body-default-regular-font-style: normal;
+  --body-default-regular-font-weight: 400;
+  --body-default-regular-letter-spacing: 0px;
+  --body-default-regular-line-height: 24px;
+  --body-large-medium-font-family: "Poppins", Helvetica;
+  --body-large-medium-font-size: 18px;
+  --body-large-medium-font-style: normal;
+  --body-large-medium-font-weight: 500;
+  --body-large-medium-letter-spacing: 0px;
+  --body-large-medium-line-height: 28px;
+  --body-large-regular-font-family: "Poppins", Helvetica;
+  --body-large-regular-font-size: 18px;
+  --body-large-regular-font-style: normal;
+  --body-large-regular-font-weight: 400;
+  --body-large-regular-letter-spacing: 0px;
+  --body-large-regular-line-height: 28px;
+  --body-small-medium-font-family: "Poppins", Helvetica;
+  --body-small-medium-font-size: 14px;
+  --body-small-medium-font-style: normal;
+  --body-small-medium-font-weight: 500;
+  --body-small-medium-letter-spacing: 0px;
+  --body-small-medium-line-height: 20px;
+  --body-small-regular-font-family: "Poppins", Helvetica;
+  --body-small-regular-font-size: 14px;
+  --body-small-regular-font-style: normal;
+  --body-small-regular-font-weight: 400;
+  --body-small-regular-letter-spacing: 0px;
+  --body-small-regular-line-height: 20px;
+  --body-small-semibold-font-family: "Poppins", Helvetica;
+  --body-small-semibold-font-size: 14px;
+  --body-small-semibold-font-style: normal;
+  --body-small-semibold-font-weight: 600;
+  --body-small-semibold-letter-spacing: 0px;
+  --body-small-semibold-line-height: 20px;
+  --caption-xsmall-font-family: "Poppins", Helvetica;
+  --caption-xsmall-font-size: 12px;
+  --caption-xsmall-font-style: normal;
+  --caption-xsmall-font-weight: 500;
+  --caption-xsmall-letter-spacing: 0px;
+  --caption-xsmall-line-height: 16px;
+  --heading-h1-font-family: "Poppins", Helvetica;
+  --heading-h1-font-size: 32px;
+  --heading-h1-font-style: normal;
+  --heading-h1-font-weight: 700;
+  --heading-h1-letter-spacing: 0px;
+  --heading-h1-line-height: 40px;
+  --heading-h2-font-family: "Poppins", Helvetica;
+  --heading-h2-font-size: 24px;
+  --heading-h2-font-style: normal;
+  --heading-h2-font-weight: 600;
+  --heading-h2-letter-spacing: 0px;
+  --heading-h2-line-height: 32px;
+  --heading-h3-font-family: "Poppins", Helvetica;
+  --heading-h3-font-size: 20px;
+  --heading-h3-font-style: normal;
+  --heading-h3-font-weight: 600;
+  --heading-h3-letter-spacing: 0px;
+  --heading-h3-line-height: 28px;
+  --neutralborder-or-line: rgba(179, 179, 179, 1);
+  --neutraldisabled: var(--variable-collection-neutral-disabled);
+  --primarydefault-or-border: var(
+    --variable-collection-primary-default-or-border
+  );
+  --primaryhover: var(--variable-collection-primary-hover);
+  --primarylight: var(--variable-collection-primary-light);
+  --secondary: rgba(110, 113, 145, 1);
+  --secondarydefault: var(--variable-collection-secondary-default);
+  --secondaryhover: var(--variable-collection-secondary-hover);
+  --secondarylight: var(--variable-collection-secondary-light);
+  --statuserror: var(--variable-collection-status-error);
+  --statussuccess: var(--variable-collection-status-success);
+  --statuswarning: var(--variable-collection-status-warning);
+  --textinfo: var(--variable-collection-text-info);
+  --texton-primary-or-hover: var(--variable-collection-text-on-primary);
+  --textplaceholder-or-disabled-text: rgba(179, 179, 179, 1);
+  --textprimary: rgba(55, 65, 81, 1);
+  --textsecondary: rgba(107, 114, 128, 1);
+  --variable-collection-background-card: rgba(255, 255, 255, 1);
+  --variable-collection-background-page: rgba(240, 247, 252, 1);
+  --variable-collection-neutral-border-or-line: rgba(179, 179, 179, 1);
+  --variable-collection-neutral-disabled: rgba(232, 232, 232, 1);
+  --variable-collection-primary-default-or-border: rgba(26, 78, 186, 1);
+  --variable-collection-primary-hover: rgba(21, 61, 148, 1);
+  --variable-collection-primary-light: rgba(168, 191, 240, 1);
+  --variable-collection-secondary-default: rgba(110, 113, 145, 1);
+  --variable-collection-secondary-hover: rgba(162, 167, 196, 1);
+  --variable-collection-secondary-light: rgba(207, 229, 255, 1);
+  --variable-collection-status-error: rgba(229, 115, 115, 1);
+  --variable-collection-status-success: rgba(101, 169, 123, 1);
+  --variable-collection-status-warning: rgba(255, 189, 0, 1);
+  --variable-collection-text-info: rgba(26, 79, 186, 1);
+  --variable-collection-text-on-primary: rgba(255, 255, 255, 1);
+  --variable-collection-text-placeholder-or-disabled-text: rgba(
+    179,
+    179,
+    179,
+    1
+  );
+  --variable-collection-text-primary: rgba(55, 65, 81, 1);
+  --variable-collection-text-secondary: rgba(107, 114, 128, 1);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
